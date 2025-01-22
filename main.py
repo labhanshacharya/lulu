@@ -21,7 +21,7 @@ def authentication():
                 user_pass = input("ENTER THE APPLICATION PASSWORD : ")
                 hash_in = sha256((user_name+user_pass).encode('utf-8')).hexdigest()
                 with open("hash.txt","r") as f:
-                    correct_hash = f.read()
+                    correct_hash = f.readline()
                 if hash_in == correct_hash:
                     sys("cls")
                     return 1
