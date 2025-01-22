@@ -5,7 +5,7 @@ purpose of making this application is simple to talk other over lan.this also ha
 contact management that you can add contact just having their ip.before use install playsound module version 1.2.2 because new version will not work
 for this application and also change port if you are testing it in same pc.
 
-# dependences
+# Dependencies
 This uses python modules like as followes:
 * socket : for network part of the application
 * hashlib : to calculate sha256 hash for authentication
