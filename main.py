@@ -10,12 +10,6 @@ def authentication():
         while True:
             try:
                 if tries == 0:
-                    print('''
-    __          _   _  __          _   _ 
-    \\ \\  ^ ^   | | | | \\ \\  0 0   | | | |
-     \\ \\  -    |^| |^|  \\ \\  -    |0| |0|
-      \\ \\      | |_| |   \\ \\      | |_| |
-       \\_____  |  O  |    \\_____  |  O  |\n\n''')
                     print("Login with to default credential given below if you are first logging in.\nuser_name = admin\nuser_pass = admin_pass\n")
                 user_name = input("ENTER THE APPLICATION USER NAME : ")
                 user_pass = input("ENTER THE APPLICATION PASSWORD : ")
@@ -40,12 +34,12 @@ def authentication():
 def prompt():
     try:
         while True:
-            command = input(f"lulu(^_^) [{user_name}@{str(soc.gethostbyname(soc.gethostname()))}]$ ")
+            command = input(f"(^_^) [{user_name}@{str(soc.gethostbyname(soc.gethostname()))}]$ ")
             commands = ["help","change crd","send m","send f","receive f","manage d","clear","bye"]
             if command in commands:
                 if command == "help":
                     print("\n ^  ^\n  ︸")
-                    print('''The lulu is a simple terminal based message application which work on peer-to-peer concept.\nThe main purpose of this is to communicate any one in the lan privately\nThis are the all command and usage:\n(*) help : to print help page\n(*) send m : send message\n(*) clear : clear the screen\n(*) send f: send any file\n(*) manage d : manage contact\n(*) receive f: receive any file\n(*) bye : exit''')
+                    print('''The zeb is a simple terminal based message application which work on peer-to-peer concept.\nThe main purpose of this is to communicate any one in the lan privately\nThis are the all command and usage:\n(*) help : to print help page\n(*) send m : send message\n(*) clear : clear the screen\n(*) send f: send any file\n(*) manage d : manage contact\n(*) receive f: receive any file\n(*) bye : exit''')
                 elif command == "clear":
                     sys("cls")
                 elif command == "manage d":
@@ -68,7 +62,7 @@ def prompt():
                         else:
                             print(f"{contact_n} is not in your contact list")
                             ip = input("ENTER THE RECIPIENT IP ADDRESS : ")
-                    message = input("lulu(^_^) message plz : ")
+                    message = input("(^_^) message plz : ")
                     print(send(ip,message,typo="m",port=5557).decode())
                 elif command == "bye":
                     print("(^_^) GOOD BYE, SEE YOU LATER")
